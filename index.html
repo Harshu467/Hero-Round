@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Hero Section</title>
+  <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Your HTML content here -->
+  
 <div id="app">
   <div class="hero-bg" :style="{ backgroundImage: `url(${activeInfo.img})` }" :key="activeIndex"></div>
   <div class="hero-title" :key="activeIndex">{{ activeInfo.name }}</div>
@@ -33,3 +44,6 @@
     <span v-for="item in 4" :key="key"></span>
   </div>
 </div>
+
+</body>
+</html>
